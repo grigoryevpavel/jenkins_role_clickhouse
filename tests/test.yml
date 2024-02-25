@@ -2,4 +2,4 @@
 - hosts: clickhouse
   remote_user: administrator
   roles:
-    - clickhouse-role
+    - jenkins_role_clickhouse
