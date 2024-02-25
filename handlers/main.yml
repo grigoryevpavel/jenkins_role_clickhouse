@@ -1,0 +1,9 @@
+---
+- name: Fix ownership for folder  clickhouse
+  become: true
+  command: chown -R clickhouse:clickhouse /var/lib/clickhouse
+- name: Start clickhouse service
+  become: true
+  ansible.builtin.service:
+    name: clickhouse-server
+    state: restarted
