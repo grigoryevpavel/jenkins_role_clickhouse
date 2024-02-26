@@ -2,5 +2,5 @@
 clickhouse:
   hosts:
     clickhouse-01:
-      ansible_host: 51.250.82.151 
+      ansible_host: 84.201.130.131
       ansible_ssh_user: administrator
